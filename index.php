@@ -18,7 +18,6 @@ if (command_exist("uname")) {
 }
 
 echo "Kernel version: " . $OS_NAME . " " . $OS_VER . "<br/>";
-exec("testfile.php", $output);
 
 if (command_exist("apache2")) {
     $WEBPROG = exec("apache2 -V | grep ^Server\ version");
